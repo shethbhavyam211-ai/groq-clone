@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #fcfbf9;
+  --bg-card: #ffffff;
+  --text-primary: #121417;
+  --text-secondary: #5f6672;
+  --border-subtle: #eae8e4;
+  --accent-orange: #f55036;
+}
+
+.dark {
+  --bg-primary: #0d0f14;
+  --bg-card: #151821;
+  --text-primary: #f3f4f6;
+  --text-secondary: #949daf;
+  --border-subtle: #222736;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(140, 145, 160, 0.25);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(140, 145, 160, 0.45);
+}
+
+/* Groq sleek button pops and badge glows */
+.groq-pop {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.groq-pop:hover {
+  transform: translateY(-2px);
+}
+.groq-pop:active {
+  transform: scale(0.97);
+}
+
+.glow-orange {
+  box-shadow: 0 0 25px -4px rgba(245, 80, 54, 0.35);
+}
+
+.glow-purple {
+  box-shadow: 0 0 25px -4px rgba(168, 85, 247, 0.35);
+}
+
